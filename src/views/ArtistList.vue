@@ -1,19 +1,19 @@
 <template>
   <div>
-    <Header/>
+    <header-app />
     <h1>Artistes</h1>
-    <article-list />
+    <artiste-list />
   </div>
 </template>
 
 <script>
 import Header from '@/components/ui-elements/Header'
-import ArticleList from '@/components/articles/ArticleList'
+import ArtistList from '@/components/artists/ArtistList'
 
 export default {
   components: {
-    'article-list': ArticleList,
-    header: Header
+    'artiste-list': ArtistList,
+    "header-app": Header
   }
 }
 </script>
