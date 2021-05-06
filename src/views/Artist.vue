@@ -1,8 +1,8 @@
 <template>
-  
+
   <div>
-    <Header/>
-    <h1>Artistes</h1>
+    <header-app />
+    <h1>Page artiste</h1>
     <article-list />
   </div>
 </template>
@@ -14,7 +14,7 @@ import ArticleList from '@/components/articles/ArticleList'
 export default {
   components: {
     'article-list': ArticleList,
-    'Header':Header
+    'header-app': Header
   }
 }
 </script>

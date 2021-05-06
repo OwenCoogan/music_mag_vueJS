@@ -13,7 +13,7 @@ import Header from '@/components/ui-elements/Header'
 export default {
   components: {
     'article-list': ArticleList,
-    'Header':Header
+    Header: Header
   }
 }
 </script>

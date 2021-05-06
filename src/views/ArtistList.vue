@@ -13,7 +13,7 @@ import ArticleList from '@/components/articles/ArticleList'
 export default {
   components: {
     'article-list': ArticleList,
-    'header':Header
+    header: Header
   }
 }
 </script>
