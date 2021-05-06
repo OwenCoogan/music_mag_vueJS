@@ -9,6 +9,7 @@
         <p>
             {{ artist.description }}
         </p>
+        <p>{{ artist.genre }}</p>
     </div>
   </div>
 </template>
@@ -35,8 +36,17 @@ export default {
           Authorization: `Bearer ${token}`
         }
       })
-      console.log(res.data)
+
+
       this.artist = res.data
+
+      const genre = await axios.get(`http://localhost:3000/genres/${res.data.id}`, {
+        headers: {
+          Authorization: `Bearer ${token}`
+        }
+      })
+
+      this.artist.genre = genre.data.name
     }
 
 
