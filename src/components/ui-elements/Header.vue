@@ -1,8 +1,12 @@
 <template>
     <header>
-        <a href="/"><img src=""></a>
+        <a href="/"><img v-bind:src="'../src/assets/logo.png'"></a>
+
         <search-bar/>
-        
+        <router-link to="/">Home</router-link>
+        <router-link to="/artists">Artists</router-link>
+        <router-link to="/articles">News</router-link>
+
     </header>
 </template>
 <script>

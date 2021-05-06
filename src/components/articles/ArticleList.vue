@@ -4,6 +4,7 @@
       <h2>{{ article.title }}</h2>
       <p>{{ article.content }}</p>
       <p>{{ article.published }}</p>
+      <a v-bind:href="`/article/`+ article.id">Lire l'article</a>
     </div>
   </div>
 
@@ -27,6 +28,7 @@ export default {
         }
       })
       this.articles = res.data
+      console.log(this.articles)
     }
 
 

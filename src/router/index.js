@@ -7,7 +7,7 @@ import Register from '@/views/Register'
 import ArtistList from '@/views/ArtistList'
 import ArticleList from '@/views/ArticleList'
 import UserList from '@/views/UserList'
-// import Article from '@/views/Article'
+import Article from '@/views/Article'
 import Artist from '@/views/Artist'
 
 import auth from '@/api/auth'
@@ -45,11 +45,11 @@ const router = new Router({
     {
       component: Artist,
       path: `/artist/:id`,
-    }/* ,
+    },
     {
       component: Article,
-      path: `/article/${article.id}`,
-    } */
+      path: `/article/:id`,
+    }
   ]
 })
 
