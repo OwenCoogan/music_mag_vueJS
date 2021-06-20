@@ -1,6 +1,6 @@
 <template>
   <div class="button">
-    <a :href="this.url">Editer</a>
+    <a class="bg-transparent hover:bg-blue-500 text-blue-700 font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded" :href="this.url">Editer</a>
   </div>
 </template>
 <script>

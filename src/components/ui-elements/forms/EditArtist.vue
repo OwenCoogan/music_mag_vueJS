@@ -1,13 +1,13 @@
 <template>
     <div>
-    <form @submit="postData">
-      <label>Nom</label>
-      <input type="name" v-model="name"/>
-      <label>Pays</label>
-      <input type="country" v-model="country"/>
-      <label>description</label>
-      <input type="description" v-model="description"/>
-      <input type="submit">
+    <form @submit="postData" class="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4">
+      <label class="block text-gray-700 text-sm font-bold mb-2">Nom</label>
+      <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" ÒÒÒtype="name" v-model="name"/>
+      <label class="block text-gray-700 text-sm font-bold mb-2">Pays</label>
+      <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" type="country" v-model="country"/>
+      <label class="block text-gray-700 text-sm font-bold mb-2">description</label>
+      <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" type="description" v-model="description"/>
+      <input class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline" type="submit">
     </form>
   </div>
 </template>

@@ -1,11 +1,11 @@
 <template>
     <div>
-    <form @submit="postData">
-      <label>Titre</label>
-      <input type="name" v-model="title"/>
-      <label>Contenu</label>
-      <input type="country" v-model="content"/>
-      <input type="submit">
+    <form @submit="postData" class="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4">
+      <label class="block text-gray-700 text-sm font-bold mb-2">Titre</label>
+      <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" type="name" v-model="title"/>
+      <label class="block text-gray-700 text-sm font-bold mb-2">Contenu</label>
+      <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" type="country" v-model="content"/>
+      <input class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline" type="submit">
     </form>
   </div>
 </template>

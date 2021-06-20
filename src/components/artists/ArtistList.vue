@@ -1,9 +1,9 @@
 <template>
-  <div >
-    <div v-for="artist in artists" :key="artist.content">
-        <img :srcset="artist.avatar" style="width:50px;">
+  <div class="grid grid-flow-row grid-cols-3 grid-rows-3 gap-4">
+    <div class="artist-card" v-for="artist in artists" :key="artist.content">
+        <img :srcset="artist.avatar">
         <h2>{{ artist.name }}</h2>
-        <a v-bind:href="`/artist/`+ artist.id">Voir page artiste</a>
+        <a class="bg-transparent hover:bg-blue-500 text-blue-700 font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded" v-bind:href="`/artist/`+ artist.id">Voir page artiste</a>
     </div>
   </div>
 

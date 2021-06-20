@@ -3,7 +3,7 @@
     <header-app />
     <h1>{{ article.title }}</h1>
     <div>
-        <img style="width:50px;">
+        <img>
         <p>
             {{ article.content }}
         </p>

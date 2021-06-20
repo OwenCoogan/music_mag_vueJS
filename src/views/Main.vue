@@ -1,12 +1,6 @@
 <template>
   <div>
     <header-app />
-    <form>
-          <label for="search">Barre de recherche</label>
-          <input type="text" name="search" v-model="search">
-          <input type="submit" v-on:click="fetchData">
-    </form>
-    <h1> Music Mag </h1>
     <div>
       <h2>Articles</h2>
       <article-list />
