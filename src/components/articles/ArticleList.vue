@@ -17,17 +17,21 @@ export default {
   data () {
     return {
       articles: [],
+      prev: null,
+      next: null,
     }
   },
   methods: {
     async fetchData () {
       const token = localStorage.getItem('vuejs_token')
-      const res = await axios.get('http://localhost:3000/news', {
+      const res = await axios.get('http://localhost:3000/news?_limit=20', {
         headers: {
           Authorization: `Bearer ${token}`
         }
       })
       this.articles = res.data
+      this.next = null
+      this.prev = null
     }
 
 
