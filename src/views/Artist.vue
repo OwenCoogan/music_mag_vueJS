@@ -9,7 +9,7 @@
         <p>
             {{ artist.description }}
         </p>
-        <p>{{ artist.genre }}</p>
+        <p class="genre">{{ artist.genre }}</p>
     </div>
     <edit--button :id="artist.id" type="artist"/>
   </div>
@@ -40,23 +40,23 @@ export default {
           Authorization: `Bearer ${token}`
         }
       })
-
-
       this.artist = res.data
-
       const genre = await axios.get(`http://localhost:3000/genres/${res.data.id}`, {
         headers: {
           Authorization: `Bearer ${token}`
         }
       })
-
       this.artist.genre = genre.data.name
+      console.log(this.artist.genre)
     },
     getAuth () {
       const token = localStorage.getItem('vuejs_token')
       if (token) {
         this.editor = true
+      } else {
+        this.editor = false
       }
+      console.log(this.editor)
     }
 
   },
