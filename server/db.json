@@ -52,16 +52,16 @@
   ],
   "news": [
     {
-      "title": "News",
+      "title": "News 123 Yes Sir",
       "published": "12/09/2020",
-      "content": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-      "id":1
+      "content": "Laze aze oreaze azeaz eaze aze m ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+      "id": 1
     },
     {
       "title": "Concert de Coldplay",
       "published": "12/09/2020",
       "content": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-      "id":2
+      "id": 2
     }
   ],
   "genres": [
@@ -100,13 +100,12 @@
   ],
   "artists": [
     {
-      "id": 1,
-      "name": "Coldplay",
-      "country": "Great Britain",
+      "name": "Coldplay yo yo",
+      "country": "Great Britain yo yo",
+      "description": "Yo yo Il est formé par l'auteur-compositeur-interprète Chris Martin et le guitariste Jon Buckland. Le bassiste Guy Berryman rejoint ensuite le groupe, avant que le batteur Will Champion ne vienne compléter le quatuor.",
       "avatar": "https://upload.wikimedia.org/wikipedia/en/1/1d/Coldplay_shot_by_Marcus_Haney_01.png",
       "genreId": 1,
-      "likes": 100310,
-      "description": "Il est formé par l'auteur-compositeur-interprète Chris Martin et le guitariste Jon Buckland. Le bassiste Guy Berryman rejoint ensuite le groupe, avant que le batteur Will Champion ne vienne compléter le quatuor."
+      "id": 1
     },
     {
       "id": 2,

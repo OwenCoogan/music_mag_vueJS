@@ -2,7 +2,7 @@
   <div>
     <header-app />
     <h1>Edit this</h1>
-    <edit-artist v-if="this.type === 'artists'" />
+    <edit-artist v-if="this.type === 'artist'" />
     <edit-article v-if="this.type === 'news'"/>
   </div>
 </template>

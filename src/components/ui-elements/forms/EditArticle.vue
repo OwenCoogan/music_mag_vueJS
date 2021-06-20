@@ -2,11 +2,9 @@
     <div>
     <form @submit="postData">
       <label>Titre</label>
-      <input type="name" v-model="name"/>
-      <label>Pays</label>
-      <input type="country" v-model="country"/>
-      <label>description</label>
-      <input type="description" v-model="description"/>
+      <input type="name" v-model="title"/>
+      <label>Contenu</label>
+      <input type="country" v-model="content"/>
       <input type="submit">
     </form>
   </div>
