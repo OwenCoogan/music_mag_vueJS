@@ -1,166 +1,379 @@
 {
   "users": [
-    {
-      "email": "toto@example.com",
-      "password": "$2a$10$dXNszRnkYBxyRPwYHgIfxeOD0/IBDbkI2aXpj1qXrMwvoVKPXa1Vq",
-      "id": 1
-    },
-    {
-      "email": "louis@narah.io",
-      "password": "$2a$10$v0jkOi/aWgRCqy8CyQ7GU.MMBDXE2HWZtIByR9glCw9SfMV5vp2kq",
-      "role": "admin",
-      "id": 2
-    },
-    {
-      "email": "admin@gmail.com",
-      "password": "$2a$10$FEzQOpyzd6sNxBU05NaWOuKuwu2ZxFeB3n0iLVwON7AwsACBgwn.S",
-      "id": 3
-    },
-    {
-      "email": "toto@gmail.com",
-      "password": "$2a$10$e/W.8lOkX9mwydK.XcDJOu8f2mv5MWlI4rISDJ0DqPRVufnoNU5va",
-      "firstname": "louis",
-      "lastname": "harang",
-      "id": 4
-    },
-    {
-      "email": "qzdqzzqd@gmail.com",
-      "password": "$2a$10$jyxLSUpYvndAQZ.AONsvxujCVFwnA/Mu3CUP1WCJ2p2PsA5J20XXW",
-      "firstname": "qdqzdzq",
-      "lastname": "qzdzdq",
-      "id": 5
-    },
-    {
-      "email": "qdqzdqzd@gmail.com",
-      "password": "$2a$10$pF1M3TQqME.vwcDorQWNIujtG31yx6ZpwExZ5uR0i.3ogfIwA35ua",
-      "firstname": "qdqzdq",
-      "lastname": "qzdqzd",
-      "id": 6
-    },
-    {
-      "email": "qzdqqz@gmail.com",
-      "password": "$2a$10$DKFeGxRnahYPul1GoKQslOHywSZq3ywtcV54VQazgSZUt5jgQ0mMa",
-      "firstname": "qzdqzd",
-      "lastname": "qzdzq",
-      "id": 7
-    },
-    {
-      "email": "admin2@gmail.com",
-      "password": "$2a$10$v4vUb8M0Igq4Xm/aX.RALOAv.BN0v3NIfp.SiDngdyLqIEnWC8AYK",
-      "id": 8
-    }
-  ],
-  "news": [
-    {
-      "title": "News",
-      "published": "12/09/2020",
-      "content": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-      "id":1
-    },
-    {
-      "title": "Concert de Coldplay",
-      "published": "12/09/2020",
-      "content": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-      "id":2
-    }
-  ],
-  "genres": [
-    {
-      "id": 1,
-      "name": "rock"
-    },
-    {
-      "id": 2,
-      "name": "metal"
-    },
-    {
-      "id": 3,
-      "name": "rap"
-    },
-    {
-      "id": 4,
-      "name": "classical"
-    },
-    {
-      "id": 5,
-      "name": "electro"
-    },
-    {
-      "id": 6,
-      "name": "rnb"
-    },
-    {
-      "id": 7,
-      "name": "alternative"
-    },
-    {
-      "id": 8,
-      "name": "jazz"
-    }
-  ],
-  "artists": [
-    {
-      "id": 1,
-      "name": "Coldplay",
-      "country": "Great Britain",
-      "avatar": "https://upload.wikimedia.org/wikipedia/en/1/1d/Coldplay_shot_by_Marcus_Haney_01.png",
-      "genreId": 1,
-      "likes": 100310,
-      "description": "Il est formé par l'auteur-compositeur-interprète Chris Martin et le guitariste Jon Buckland. Le bassiste Guy Berryman rejoint ensuite le groupe, avant que le batteur Will Champion ne vienne compléter le quatuor."
-    },
-    {
-      "id": 2,
-      "name": "Tom misch",
-      "avatar": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0b/Tom_Misch%2C_The_Novo%2C_April_2018_%28cropped%29.jpg/800px-Tom_Misch%2C_The_Novo%2C_April_2018_%28cropped%29.jpg",
-      "origin": "Great Britan",
-      "genreId": 8,
-      "likes": 1024,
-      "description": "Thomas Abraham Misch (born 25 June 1995) is an English musician and producer. He began releasing music on SoundCloud in 2012 and released his debut studio album Geography in 2018"
-    },
-    {
-      "id": 3,
-      "name": "Damso",
-      "avatar": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/de/Festival_des_Vieilles_Charrues_2018_-_Damso_-_006.jpg/800px-Festival_des_Vieilles_Charrues_2018_-_Damso_-_006.jpg",
-      "origin": "Belgique",
-      "genreId": 3,
-      "likes": 20420,
-      "description": "Damso, de son vrai nom William Kalubi Mwamba, né le 10 mai 1992 à Kinshasa (Zaïre, actuelle République démocratique du Congo), est un rappeur et auteur-compositeur-interprète belgo-congolais."
-    }
-  ],
-  "albums": [
-    {
-      "id": 1,
-      "name": "QALF",
-      "released": 2020,
-      "tracks": 15,
-      "artistId": 3
-    },
-    {
-      "id": 2,
-      "name": "Geography",
-      "released": 2018,
-      "tracks": 13,
-      "artistId": 2
-    }
-  ],
-  "concerts": [
-    {
-      "id": 1,
-      "name": "Paris Bercy",
-      "date": "10/12/2019",
-      "artistId": 3
-    },
-    {
-      "id": 2,
-      "name": "Olympia",
-      "date": "10/12/2018",
-      "artistId": 3
-    },
-    {
-      "id": 1,
-      "name": "O2 Academy Manchester",
-      "date": "10/12/2018",
-      "artistId": 2
-    }
+  {
+    "email": "toto@example.com",
+    "password": "$2a$10$dXNszRnkYBxyRPwYHgIfxeOD0/IBDbkI2aXpj1qXrMwvoVKPXa1Vq",
+    "id": 1
+  },
+  {
+    "email": "louis@narah.io",
+    "password": "$2a$10$v0jkOi/aWgRCqy8CyQ7GU.MMBDXE2HWZtIByR9glCw9SfMV5vp2kq",
+    "role": "admin",
+    "id": 2
+  },
+  {
+    "email": "admin@gmail.com",
+    "password": "$2a$10$FEzQOpyzd6sNxBU05NaWOuKuwu2ZxFeB3n0iLVwON7AwsACBgwn.S",
+    "id": 3
+  },
+  {
+    "email": "toto@gmail.com",
+    "password": "$2a$10$e/W.8lOkX9mwydK.XcDJOu8f2mv5MWlI4rISDJ0DqPRVufnoNU5va",
+    "firstname": "louis",
+    "lastname": "harang",
+    "id": 4
+  },
+  {
+    "email": "qzdqzzqd@gmail.com",
+    "password": "$2a$10$jyxLSUpYvndAQZ.AONsvxujCVFwnA/Mu3CUP1WCJ2p2PsA5J20XXW",
+    "firstname": "qdqzdzq",
+    "lastname": "qzdzdq",
+    "id": 5
+  },
+  {
+    "email": "qdqzdqzd@gmail.com",
+    "password": "$2a$10$pF1M3TQqME.vwcDorQWNIujtG31yx6ZpwExZ5uR0i.3ogfIwA35ua",
+    "firstname": "qdqzdq",
+    "lastname": "qzdqzd",
+    "id": 6
+  },
+  {
+    "email": "qzdqqz@gmail.com",
+    "password": "$2a$10$DKFeGxRnahYPul1GoKQslOHywSZq3ywtcV54VQazgSZUt5jgQ0mMa",
+    "firstname": "qzdqzd",
+    "lastname": "qzdzq",
+    "id": 7
+  },
+  {
+    "email": "admin2@gmail.com",
+    "password": "$2a$10$v4vUb8M0Igq4Xm/aX.RALOAv.BN0v3NIfp.SiDngdyLqIEnWC8AYK",
+    "id": 8
+  }
+],
+"news": [
+  {
+    "title": "News",
+    "published": "12/09/2020",
+    "content": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+    "id":1
+  },
+  {
+    "title": "Concert de Coldplay",
+    "published": "12/09/2020",
+    "content": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+    "id":2
+  }
+],
+"genres": [
+  {
+    "id": 1,
+    "name": "rock"
+  },
+  {
+    "id": 2,
+    "name": "metal"
+  },
+  {
+    "id": 3,
+    "name": "rap"
+  },
+  {
+    "id": 4,
+    "name": "classical"
+  },
+  {
+    "id": 5,
+    "name": "electro"
+  },
+  {
+    "id": 6,
+    "name": "rnb"
+  },
+  {
+    "id": 7,
+    "name": "alternative"
+  },
+  {
+    "id": 8,
+    "name": "jazz"
+  }
+],
+"artists": [
+  {
+    "id": 1,
+    "name": "Coldplay",
+    "country": "Great Britain",
+    "avatar": "https://upload.wikimedia.org/wikipedia/en/1/1d/Coldplay_shot_by_Marcus_Haney_01.png",
+    "genreId": 1,
+    "likes": 100310,
+    "description": "Il est formé par l'auteur-compositeur-interprète Chris Martin et le guitariste Jon Buckland. Le bassiste Guy Berryman rejoint ensuite le groupe, avant que le batteur Will Champion ne vienne compléter le quatuor."
+  },
+  {
+    "id": 2,
+    "name": "Tom misch",
+    "avatar": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0b/Tom_Misch%2C_The_Novo%2C_April_2018_%28cropped%29.jpg/800px-Tom_Misch%2C_The_Novo%2C_April_2018_%28cropped%29.jpg",
+    "origin": "Great Britan",
+    "genreId": 8,
+    "likes": 1024,
+    "description": "Thomas Abraham Misch (born 25 June 1995) is an English musician and producer. He began releasing music on SoundCloud in 2012 and released his debut studio album Geography in 2018"
+  },
+  {
+    "id": 3,
+    "name": "Damso",
+    "avatar": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/de/Festival_des_Vieilles_Charrues_2018_-_Damso_-_006.jpg/800px-Festival_des_Vieilles_Charrues_2018_-_Damso_-_006.jpg",
+    "origin": "Belgique",
+    "genreId": 3,
+    "likes": 20420,
+    "description": "Damso, de son vrai nom William Kalubi Mwamba, né le 10 mai 1992 à Kinshasa (Zaïre, actuelle République démocratique du Congo), est un rappeur et auteur-compositeur-interprète belgo-congolais."
+  },
+  {
+    "id": 4,
+    "name": "David Guetta",
+    "avatar": "https://upload.wikimedia.org/wikipedia/commons/6/6f/David_Guetta_at_2011_MMVA.jpg",
+    "origin": "France",
+    "genreId": 5,
+    "likes": 802,
+    "description": "David Guetta est un DJ, compositeur, producteur français né le 7 novembre 1967 à Paris. Il débute adolescent avant de se professionnaliser juste avant la majorité"
+  },
+  {
+    "id": 5,
+    "name": "Don Byron",
+    "avatar": "https://upload.wikimedia.org/wikipedia/commons/f/fc/Don_Byron.jpg",
+    "origin": "État-Unis",
+    "genreId": 8,
+    "likes": 520,
+    "description": "Don Byron, né le 8 novembre 1958, est un compositeur, saxophoniste et clarinettiste de jazz. Il est considéré comme un musicien de jazz mais il s'est aventuré dans d'autres genres musicaux : la musique"
+  },
+  {
+    "id": 6,
+    "name": "Rammstein",
+    "avatar": "https://upload.wikimedia.org/wikipedia/commons/7/7f/Rammstein.CD.png",
+    "origin": "Allemand",
+    "genreId": 2,
+    "likes": 326,
+    "description": "Thomas Abraham Misch (born 25 June 1995) is an English musician and producer. He began releasing music on SoundCloud in 2012 and released his debut studio album Geography in 2018"
+  },
+  {
+    "id": 7,
+    "name": "Beyonce",
+    "avatar": "https://upload.wikimedia.org/wikipedia/commons/7/7f/Rammstein.CD.png",
+    "origin": "Etat Unis",
+    "genreId": 6,
+    "likes": 1260,
+    "description": "Beyoncé est une chanteuse, compositrice, danseuse, productrice et actrice américaine, née le 4 septembre 1981 à Houston, au Texas. Elle est désignée en 2009 comme étant l'artiste de la décennie 2000 par The Guardian."
+  },
+  {
+    "id": 8,
+    "name": "Harry Styles",
+    "avatar": "https://upload.wikimedia.org/wikipedia/commons/c/cd/Harry_Styles_Denver_HsLot_2.jpg",
+    "origin": "Great Britan",
+    "genreId": 1,
+    "likes": 389,
+    "description": "Harry Styles, né le 1er février 1994 à Redditch (Angleterre), est un chanteur, musicien et acteur britannique. En 2017, il lance sa carrière solo et sort son premier album : Harry Styles."
+  },
+  {
+    "id": 9,
+    "name": "Gojira",
+    "avatar": "https://upload.wikimedia.org/wikipedia/commons/5/53/Gojira_live_-_Nachtleben%2C_Ffm_-_2009_-_JD_-_6.JPG",
+    "origin": "France",
+    "genreId": 2,
+    "likes": 498,
+    "description": "Gojira est un groupe de death metal technique français, originaire d'Ondres. Il est initialement formé en 1996 sous le nom de Godzilla, puis adopte le nom de Gojira en 2001. Le groupe est actuellement composé de quatre membres "
+  },
+  {
+    "id": 10,
+    "name": "SWV",
+    "avatar": "https://upload.wikimedia.org/wikipedia/commons/c/ca/SWV_performing_at_Rams_.jpg",
+    "origin": "Etat Unis",
+    "genreId": 6,
+    "likes": 530,
+    "description": "SWV, abréviation de Sisters with Voices, est un groupe de trois chanteuses de RnB américain créé en 1990 à New York. es trois amies membres du groupe sont Cheryl « Coko » Gamble-Clemons, Tamara « Taj » Johnson-George et Leanne « Lelee » Lyons"
+  },
+  {
+    "id": 11,
+    "name": "Luciano Pavarotti",
+    "avatar": "hhttps://upload.wikimedia.org/wikipedia/commons/d/d9/Luciano_Pavarotti_in_Saint_Petersburg.jpg",
+    "origin": "Italien",
+    "genreId": 4,
+    "likes": 490,
+    "description": "Luciano Pavarotti, né le 12 octobre 1935 à Modène, où il meurt le 6 septembre 2007, est un ténor italien. Souvent cité comme le plus grand et le plus populaire chanteur d'opéra depuis Enrico Caruso1,2, il chante les plus grands airs du bel canto, notamment Verdi et Puccini "
+  },
+  {
+    "id": 12,
+    "name": "Ludwig van Beethoven",
+    "avatar": "https://upload.wikimedia.org/wikipedia/commons/6/6f/Beethoven.jpg",
+    "origin": "Allemand",
+    "genreId": 4,
+    "likes": 528,
+    "description": "Ludwig van Beethoven est un compositeur et pianiste allemand né à Bonn le 15 ou 16 décembre 1770 et mort à Vienne le 26 mars 1827."
+  },
+  {
+    "id": 13,
+    "name": "Drake",
+    "avatar": "https://upload.wikimedia.org/wikipedia/commons/2/28/Drake_July_2016.jpg",
+    "origin": "Etat Unis",
+    "genreId": 3,
+    "likes": 2067,
+    "description": "Drake , de son vrai nom Aubrey Drake Graham, né le 24 octobre 1986 à Toronto, en Ontario, au Canada, est un rappeur-compositeur et acteur canadien. Longtemps affilié au label du rappeur Lil Wayne Young Money Entertainment, il y a signé officiellement en juin 2009."
+  },
+  {
+    "id": 14,
+    "name": "Don Byron",
+    "avatar": "https://upload.wikimedia.org/wikipedia/commons/f/fc/Don_Byron.jpg",
+    "origin": "État-Unis",
+    "genreId": 8,
+    "likes": 520,
+    "description": "Don Byron, né le 8 novembre 1958, est un compositeur, saxophoniste et clarinettiste de jazz. Il est considéré comme un musicien de jazz mais il s'est aventuré dans d'autres genres musicaux : la musique"
+  },
+  {
+    "id": 15,
+    "name": "Rammstein",
+    "avatar": "https://upload.wikimedia.org/wikipedia/commons/7/7f/Rammstein.CD.png",
+    "origin": "Allemand",
+    "genreId": 5,
+    "likes": 326,
+    "description": "Thomas Abraham Misch (born 25 June 1995) is an English musician and producer. He began releasing music on SoundCloud in 2012 and released his debut studio album Geography in 2018"
+  },
+  {
+    "id": 16,
+    "name": "Beyonce",
+    "avatar": "https://upload.wikimedia.org/wikipedia/commons/7/7f/Rammstein.CD.png",
+    "origin": "Etat Unis",
+    "genreId": 6,
+    "likes": 1260,
+    "description": "Beyoncé est une chanteuse, compositrice, danseuse, productrice et actrice américaine, née le 4 septembre 1981 à Houston, au Texas. Elle est désignée en 2009 comme étant l'artiste de la décennie 2000 par The Guardian."
+  }
+],
+"albums": [
+  {
+    "id": 1,
+    "name": "QALF",
+    "released": 2020,
+    "tracks": 14,
+    "artistId": 3
+  },
+  {
+    "id": 2,
+    "name": "Geography",
+    "released": 2018,
+    "tracks": 13,
+    "artistId": 2
+  },
+  {
+    "id": 3,
+    "name": "Live 2012",
+    "released": 2012,
+    "tracks": 15,
+    "artistId": 1
+  },
+  {
+    "id": 4,
+    "name": "New Rave",
+    "released": 2018,
+    "tracks": 4,
+    "artistId": 4
+  },
+  {
+    "id": 5,
+    "name": "Infinite winds",
+    "released": 2015,
+    "tracks": 11,
+    "artistId": 5
+  },
+  {
+    "id": 6,
+    "name": "rammstein",
+    "released": 2019,
+    "tracks": 11,
+    "artistId": 6
+  },
+  {
+    "id": 7,
+    "name": "Lemonade",
+    "released": 2016,
+    "tracks": 12,
+    "artistId": 7
+  },
+  {
+    "id": 8,
+    "name": "Harry Styles.",
+    "released": 2017,
+    "tracks": 3,
+    "artistId": 8
+  },
+  {
+    "id": 9,
+    "name": "L'Enfant sauvage",
+    "released": 2012,
+    "tracks": 13,
+    "artistId": 9
+  },
+  {
+    "id": 10,
+    "name": "Lemonade",
+    "released": 2016,
+    "tracks": 13,
+    "artistId": 10
+  },{
+    "id": 11,
+    "name": "Les trois ténors",
+    "released": 1994,
+    "tracks": 27,
+    "artistId": 11
+  },
+  {
+    "id": 12,
+    "name": "Les 9 Symphonies",
+    "released": 2000,
+    "tracks": 9,
+    "artistId": 12
+  },
+  {
+    "id": 13,
+    "name": "More Life",
+    "released": 2017,
+    "tracks": 22,
+    "artistId": 13
+  },{
+    "id": 14,
+    "name": "Infinite winds",
+    "released": 2015,
+    "tracks": 11,
+    "artistId": 14
+  },
+  {
+    "id": 15,
+    "name": "rammstein",
+    "released": 2019,
+    "tracks": 11,
+    "artistId": 15
+  },
+  {
+    "id": 16,
+    "name": "Lemonade",
+    "released": 2016,
+    "tracks": 12,
+    "artistId": 16
+  }
+],
+"concerts": [
+  {
+    "id": 1,
+    "name": "Paris Bercy",
+    "date": "10/12/2019",
+    "artistId": 3
+  },
+  {
+    "id": 2,
+    "name": "Olympia",
+    "date": "10/12/2018",
+    "artistId": 3
+  },
+  {
+    "id": 1,
+    "name": "O2 Academy Manchester",
+    "date": "10/12/2018",
+    "artistId": 2
+  }
   ]
 }
