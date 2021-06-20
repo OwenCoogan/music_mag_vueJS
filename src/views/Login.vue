@@ -1,11 +1,13 @@
 <template>
   <div>
     <h1> Login </h1>
-    <label>Login</label>
-    <input v-model="email"/>
-    <label>Password</label>
-    <input type="password" v-model="password"/>
-    <button @click="submitLogin">Connexion</button>
+    <form class="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4">
+    <label class="block text-gray-700 text-sm font-bold mb-2" >Login</label>
+    <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" v-model="email"/>
+    <label class="block text-gray-700 text-sm font-bold mb-2">Password</label>
+    <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline margin-bottom" type="password" v-model="password"/>
+    <a class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline" @click="submitLogin">Connexion</a>
+    </form>
   </div>
 </template>
 

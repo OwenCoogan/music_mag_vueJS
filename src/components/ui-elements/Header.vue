@@ -5,6 +5,8 @@
           <router-link to="/">Home</router-link>
           <router-link to="/artists">Artists</router-link>
           <router-link to="/articles">News</router-link>
+          <router-link to="/register">S'inscrire</router-link>
+          <router-link to="/login">Connexion</router-link>
         </nav>
     </header>
 </template>

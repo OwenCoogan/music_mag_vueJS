@@ -12,14 +12,14 @@
         <p class="genre">{{ artist.genre }}</p>
     </div>
     <div class="grid grid-flow-row grid-cols-3 grid-rows-2 gap-4">
-      <div class="article-card my-1 px-1 w-full lg:my-4 rounded-lg shadow-lg" v-for="concert in artist.concerts" :key="concert.name">
+      <div class="article-card my-1 px-1 w-full lg:my-4 rounded-lg shadow-lg" v-for="concert in this.artist.concerts" :key="concert.name">
         <p class="genre">{{ concert.name }}</p>
         <p class="genre">{{ concert.date }}</p>
       </div>
     </div>
 
     <div class="grid grid-flow-row grid-cols-3 grid-rows-2 gap-4">
-      <div class="article-card my-1 px-1 w-full lg:my-4 rounded-lg shadow-lg" v-for="album in artist.albums" :key="album.name">
+      <div class="article-card my-1 px-1 w-full lg:my-4 rounded-lg shadow-lg" v-for="album in this.artist.albums" :key="album.name">
         <p class="genre">{{ album.name }}</p>
         <p class="genre">{{ album.date }}</p>
       </div>
@@ -54,20 +54,20 @@ export default {
         }
       })
       this.artist = res.data
-      const genre = await axios.get(`http://localhost:3000/genres/${res.data.genreId}`, {
+      const genre = await axios.get(`http://localhost:3000/genres/${this.artist.genreId}`, {
         headers: {
           Authorization: `Bearer ${token}`
         }
       })
       this.artist.genre = genre.data.name
-      const concerts = await axios.get(`http://localhost:3000/concerts?artistId=${res.data.id}`, {
+      const concerts = await axios.get(`http://localhost:3000/concerts?artistId=${this.artist.id}`, {
         headers: {
           Authorization: `Bearer ${token}`
         }
       })
       this.artist.concerts = concerts.data
 
-      const albums = await axios.get(`http://localhost:3000/albums?artistId=${res.data.id}`, {
+      const albums = await axios.get(`http://localhost:3000/albums?artistId=${this.artist.id}`, {
         headers: {
           Authorization: `Bearer ${token}`
         }

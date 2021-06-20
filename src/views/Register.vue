@@ -1,15 +1,17 @@
 <template>
   <div>
     <h1> Inscription </h1>
-    <label>Email</label>
-    <input v-model="email"/>
-    <label>Password</label>
-    <input type="password" v-model="password"/>
-    <label>Prénom</label>
-    <input v-model="firstname"/>
-    <label>Nom</label>
-    <input v-model="lastname"/>
-    <button @click="submitForm">S'inscrire</button>
+    <form class="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4">
+    <label class="block text-gray-700 text-sm font-bold mb-2">Email</label>
+    <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" v-model="email"/>
+    <label class="block text-gray-700 text-sm font-bold mb-2">Password</label>
+    <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" type="password" v-model="password"/>
+    <label class="block text-gray-700 text-sm font-bold mb-2">Prénom</label>
+    <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" v-model="firstname"/>
+    <label class="block text-gray-700 text-sm font-bold mb-2">Nom</label>
+    <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" v-model="lastname"/>
+    </form>
+    <a class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline" @click="submitForm">S'inscrire</a>
   </div>
 </template>
 
