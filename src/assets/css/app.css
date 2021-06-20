@@ -12,6 +12,11 @@
     text-align:center;
     height:100%;
 }
+body{
+    height:100%;
+    --tw-bg-opacity: 1;
+    background-color: rgba(209, 213, 219, var(--tw-bg-opacity));
+}
 .search--bar{
     display:block;
     width:80%;
@@ -19,9 +24,11 @@
 }
 .article-card,.artist-card{
     text-align: center;
+    padding: 12px;
+
 }
 .article-card .content,.artist-card .content{
-    height:200px;
+    height:100px;
     text-overflow: ellipsis;
     overflow: hidden;
 }

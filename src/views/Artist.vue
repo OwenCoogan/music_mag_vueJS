@@ -10,8 +10,9 @@
             {{ artist.description }}
         </p>
         <p class="genre">{{ artist.genre }}</p>
+        <p class="genre">{{ artist.id }}</p>
     </div>
-    <edit--button :id="artist.id" type="artist"/>
+    <edit--button v-bind:id="artist.id" type="artist"/>
   </div>
 </template>
 
@@ -47,7 +48,6 @@ export default {
         }
       })
       this.artist.genre = genre.data.name
-      console.log(this.artist.genre)
     },
     getAuth () {
       const token = localStorage.getItem('vuejs_token')
@@ -56,7 +56,6 @@ export default {
       } else {
         this.editor = false
       }
-      console.log(this.editor)
     }
 
   },

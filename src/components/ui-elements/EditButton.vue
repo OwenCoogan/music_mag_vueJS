@@ -17,8 +17,9 @@ export default ({
   },
   methods: {
     buildUrl () {
-      const url = this.type + '/' + this.id
-      this.url = "/edit/" + url
+      const url = "/edit/" + this.type + '/' + this.id
+      console.log(url)
+      this.url = url
     }
   },
   mounted () {
