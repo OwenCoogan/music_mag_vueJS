@@ -54,7 +54,7 @@ export default {
         }
       })
       this.artist = res.data
-      const genre = await axios.get(`http://localhost:3000/genres/${res.data.id}`, {
+      const genre = await axios.get(`http://localhost:3000/genres/${res.data.genreId}`, {
         headers: {
           Authorization: `Bearer ${token}`
         }
@@ -73,9 +73,6 @@ export default {
         }
       })
       this.artist.albums = albums.data
-
-
-
       console.log(this.artist)
     },
     getAuth () {
