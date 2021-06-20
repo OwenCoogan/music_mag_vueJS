@@ -54,7 +54,11 @@ const router = new Router({
     {
       component: EditForm,
       path: `/edit/:type/:id`,
+      meta: {
+        auth: true,
+      }
     }
+
   ]
 })
 
