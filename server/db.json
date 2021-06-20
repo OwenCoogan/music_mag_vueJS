@@ -218,30 +218,12 @@
   },
   {
     "id": 14,
-    "name": "Don Byron",
-    "avatar": "https://upload.wikimedia.org/wikipedia/commons/f/fc/Don_Byron.jpg",
+    "name": "Miles Davis",
+    "avatar": "https://upload.wikimedia.org/wikipedia/commons/f/fa/Miles_Davis_by_Palumbo.jpg",
     "origin": "État-Unis",
     "genreId": 8,
-    "likes": 520,
-    "description": "Don Byron, né le 8 novembre 1958, est un compositeur, saxophoniste et clarinettiste de jazz. Il est considéré comme un musicien de jazz mais il s'est aventuré dans d'autres genres musicaux : la musique"
-  },
-  {
-    "id": 15,
-    "name": "Rammstein",
-    "avatar": "https://upload.wikimedia.org/wikipedia/commons/7/7f/Rammstein.CD.png",
-    "origin": "Allemand",
-    "genreId": 5,
-    "likes": 326,
-    "description": "Thomas Abraham Misch (born 25 June 1995) is an English musician and producer. He began releasing music on SoundCloud in 2012 and released his debut studio album Geography in 2018"
-  },
-  {
-    "id": 16,
-    "name": "Beyonce",
-    "avatar": "https://upload.wikimedia.org/wikipedia/commons/7/7f/Rammstein.CD.png",
-    "origin": "Etat Unis",
-    "genreId": 6,
-    "likes": 1260,
-    "description": "Beyoncé est une chanteuse, compositrice, danseuse, productrice et actrice américaine, née le 4 septembre 1981 à Houston, au Texas. Elle est désignée en 2009 comme étant l'artiste de la décennie 2000 par The Guardian."
+    "likes": 855,
+    "description": "Miles Davis, né le 26 mai 1926 à Alton (Illinois), et mort le 28 septembre 1991 à Santa Monica (Californie), est un compositeur et trompettiste de jazz américain."
   }
 ],
 "albums": [
@@ -336,24 +318,10 @@
     "artistId": 13
   },{
     "id": 14,
-    "name": "Infinite winds",
-    "released": 2015,
-    "tracks": 11,
+    "name": "We Want Miles",
+    "released": 1982,
+    "tracks": 6,
     "artistId": 14
-  },
-  {
-    "id": 15,
-    "name": "rammstein",
-    "released": 2019,
-    "tracks": 11,
-    "artistId": 15
-  },
-  {
-    "id": 16,
-    "name": "Lemonade",
-    "released": 2016,
-    "tracks": 12,
-    "artistId": 16
   }
 ],
 "concerts": [
@@ -370,10 +338,34 @@
     "artistId": 3
   },
   {
-    "id": 1,
+    "id": 3,
     "name": "O2 Academy Manchester",
     "date": "10/12/2018",
     "artistId": 2
+  },
+  {
+    "id": 4,
+    "name": "Exit Festival",
+    "date": "08/07/2021",
+    "artistId": 4
+  },
+  {
+    "id": 7,
+    "name": "Love on Tour",
+    "date": "23/02/2021",
+    "artistId": 7
+  },
+  {
+    "id": 9,
+    "name": "korn with special guest",
+    "date": "25/10/2021",
+    "artistId": 10
+  },
+  {
+    "id": 13,
+    "name": "The Assassination Vacation Tour à l'AccorHotels Arena",
+    "date": "13/03/2021",
+    "artistId": 13
   }
   ]
 }
