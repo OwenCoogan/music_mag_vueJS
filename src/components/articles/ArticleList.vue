@@ -32,6 +32,19 @@ export default {
       this.articles = res.data
       this.next = null
       this.prev = null
+    },
+    previousPage () {
+      const url = 'http://localhost:3000/news?&_limit=3&_page=' + this.prev
+      this.fetchData(url)
+      this.prev = this.prev - 1
+      this.next = this.next - 1
+    },
+    nextPage () {
+      const url = 'http://localhost:3000/news?&_limit=3&_page=' + this.next
+      this.fetchData(url)
+
+      this.prev = this.prev + 1
+      this.next = this.next + 1
     }
 
 

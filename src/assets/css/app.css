@@ -53,3 +53,7 @@ img{
 p{
     margin-bottom:20px;
 }
+.paginate-btn{
+    height:80px;
+    margin:auto;
+}
