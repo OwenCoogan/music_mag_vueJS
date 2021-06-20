@@ -21,6 +21,7 @@ export default {
   data () {
     return {
       article: [],
+      editor: null
     }
   },
   methods: {
@@ -36,12 +37,20 @@ export default {
 
 
       this.article = res.data
+    },
+    getAuth () {
+      const token = localStorage.getItem('vuejs_token')
+      if (token) {
+        this.editor = true
+      }
     }
+
 
 
   },
   mounted () {
     this.fetchData()
+    this.getAuth()
   }
 }
 </script>
