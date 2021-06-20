@@ -27,7 +27,6 @@ export default {
           Authorization: `Bearer ${token}`
         }
       })
-      console.log(res)
       this.users = res.data
     }
   },

@@ -28,7 +28,6 @@ export default {
         }
       })
       this.articles = res.data
-      console.log(this.articles)
     }
 
 

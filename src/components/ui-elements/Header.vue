@@ -15,6 +15,9 @@ import SearchBar from '@/components/ui-elements/SearchBar'
 export default {
   components: {
     'search-bar': SearchBar,
+  },
+  methods: {
+
   }
 }
 </script>

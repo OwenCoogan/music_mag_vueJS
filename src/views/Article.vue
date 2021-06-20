@@ -36,7 +36,6 @@ export default {
 
 
       this.article = res.data
-      console.log(this.article)
     }
 
 
