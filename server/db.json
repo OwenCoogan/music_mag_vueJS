@@ -108,13 +108,12 @@
       "id": 1
     },
     {
-      "id": 2,
-      "name": "Tom misch",
+      "name": "Tom Misch",
+      "country": "England",
+      "description": "Thomas Abraham Misch (born 25 June 1995) is an English musician and producer. He began releasing music on SoundCloud in 2012 and released his debut studio album Geography in 2018",
       "avatar": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0b/Tom_Misch%2C_The_Novo%2C_April_2018_%28cropped%29.jpg/800px-Tom_Misch%2C_The_Novo%2C_April_2018_%28cropped%29.jpg",
-      "origin": "Great Britan",
       "genreId": 8,
-      "likes": 1024,
-      "description": "Thomas Abraham Misch (born 25 June 1995) is an English musician and producer. He began releasing music on SoundCloud in 2012 and released his debut studio album Geography in 2018"
+      "id": 2
     },
     {
       "id": 3,

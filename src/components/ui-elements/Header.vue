@@ -1,7 +1,7 @@
 <template>
     <header>
         <nav class="flex items-center justify-between flex-wrap bg-teal p-6">
-          <a href="/"><img v-bind:src="'../src/assets/logo.png'"></a>
+          <h1> Music Mag </h1>
           <router-link to="/">Home</router-link>
           <router-link to="/artists">Artists</router-link>
           <router-link to="/articles">News</router-link>

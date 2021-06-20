@@ -1,7 +1,6 @@
 <template>
-    <div>
+    <div class="search--bar">
         <form>
-          <label for="search">Barre de recherche</label>
           <input type="text" name="search" v-model="search">
           <input type="submit" v-on:click="fetchData">
         </form>

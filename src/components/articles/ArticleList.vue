@@ -1,10 +1,10 @@
 <template>
-  <div >
-    <div v-for="article in articles" :key="article.content">
+  <div class="grid grid-flow-row grid-cols-3 grid-rows-3 gap-4">
+    <div class="article-card" v-for="article in articles" :key="article.content">
       <h2>{{ article.title }}</h2>
-      <p>{{ article.content }}</p>
-      <p>{{ article.published }}</p>
-      <a v-bind:href="`/article/`+ article.id">Lire l'article</a>
+      <p class="content">{{ article.content }}</p>
+      <p class="date"> <b>rédigé le :</b> {{ article.published }}</p>
+      <a class="bg-transparent hover:bg-blue-500 text-blue-700 font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded" v-bind:href="`/article/`+ article.id">Lire l'article</a>
     </div>
   </div>
 

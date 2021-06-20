@@ -2,9 +2,9 @@
 
   <div>
     <header-app />
-    <h1>Page artiste</h1>
+    <h1>Page artiste : {{ artist.name }} </h1>
     <div>
-        <img :srcset="artist.avatar" style="width:50px;">
+        <img :srcset="artist.avatar">
         <h2>{{ artist.name }}</h2>
         <p>
             {{ artist.description }}
