@@ -1,12 +1,15 @@
 <template>
+
   <div>
     <header-app />
-    <h1>{{ article.title }}</h1>
+    <h1>Page artiste</h1>
     <div>
-        <img style="width:50px;">
+        <img :srcset="artist.avatar" style="width:50px;">
+        <h2>{{ artist.name }}</h2>
         <p>
-            {{ article.content }}
+            {{ artist.description }}
         </p>
+        <p>{{ artist.genre }}</p>
     </div>
   </div>
 </template>
@@ -20,8 +23,7 @@ export default {
   },
   data () {
     return {
-      article: [],
-      editor: null
+      artist: [],
     }
   },
   methods: {
@@ -29,28 +31,29 @@ export default {
       const splitUrl = window.location.href.split('/')
       const id = splitUrl[4]
       const token = localStorage.getItem('vuejs_token')
-      const res = await axios.get(`http://localhost:3000/news/${id}`, {
+      const res = await axios.get(`http://localhost:3000/artists/${id}`, {
         headers: {
           Authorization: `Bearer ${token}`
         }
       })
 
 
-      this.article = res.data
-    },
-    getAuth () {
-      const token = localStorage.getItem('vuejs_token')
-      if (token) {
-        this.editor = true
-      }
-    }
+      this.artist = res.data
 
+      const genre = await axios.get(`http://localhost:3000/genres/${res.data.id}`, {
+        headers: {
+          Authorization: `Bearer ${token}`
+        }
+      })
+
+      this.artist.genre = genre.data.name
+      console.log(this.artist)
+    }
 
 
   },
   mounted () {
     this.fetchData()
-    this.getAuth()
   }
 }
 </script>

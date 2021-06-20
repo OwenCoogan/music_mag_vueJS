@@ -26,7 +26,6 @@ export default {
           Authorization: `Bearer ${token}`
         }
       })
-      console.log(res.data)
       this.artists = res.data
     }
 

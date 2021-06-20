@@ -9,6 +9,7 @@ import ArticleList from '@/views/ArticleList'
 import UserList from '@/views/UserList'
 import Article from '@/views/Article'
 import Artist from '@/views/Artist'
+import EditForm from '@/views/EditForm'
 
 import auth from '@/api/auth'
 
@@ -49,6 +50,10 @@ const router = new Router({
     {
       component: Article,
       path: `/article/:id`,
+    },
+    {
+      component: EditForm,
+      path: `/edit/:type/:id`,
     }
   ]
 })

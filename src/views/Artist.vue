@@ -11,19 +11,23 @@
         </p>
         <p>{{ artist.genre }}</p>
     </div>
+    <edit--button :id="artist.id" type="artist"/>
   </div>
 </template>
 
 <script>
 import Header from '@/components/ui-elements/Header'
+import EditButton from '@/components/ui-elements/EditButton'
 import axios from 'axios'
 export default {
   components: {
-    'header-app': Header
+    'header-app': Header,
+    'edit--button': EditButton
   },
   data () {
     return {
       artist: [],
+      editor: null
     }
   },
   methods: {
@@ -47,12 +51,18 @@ export default {
       })
 
       this.artist.genre = genre.data.name
+    },
+    getAuth () {
+      const token = localStorage.getItem('vuejs_token')
+      if (token) {
+        this.editor = true
+      }
     }
-
 
   },
   mounted () {
     this.fetchData()
+    this.getAuth()
   }
 }
 </script>
