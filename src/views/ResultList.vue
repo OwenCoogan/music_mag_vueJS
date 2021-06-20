@@ -49,8 +49,6 @@ export default {
       this.artist.genre = genre.data.name
       console.log(this.artist)
     }
-
-
   },
   mounted () {
     this.fetchData()
