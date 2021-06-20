@@ -1,16 +1,28 @@
 <template>
     <div>
-        <label for="search">Barre de recherche</label>
-        <input type="text" name="search">
-        <input type="submit">
+        <form>
+          <label for="search">Barre de recherche</label>
+          <input type="text" name="search" v-model="search">
+          <input type="submit" v-on:click="fetchData">
+        </form>
     </div>
 </template>
 <script>
-import { defineComponent } from '@vue/composition-api'
-
-export default defineComponent({
-  setup () {
-        
+import axios from 'axios'
+export default {
+  data () {
+    return {
+      search: null,
+      results: [],
+    }
   },
-})
+  methods: {
+    async fetchData () {
+      const value = this.search
+      const res = axios.get('http://localhost:3000/articles?q=' + value, {
+      })
+      this.results = res.data
+    }
+  }
+}
 </script>

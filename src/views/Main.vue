@@ -1,6 +1,11 @@
 <template>
   <div>
     <header-app />
+    <form>
+          <label for="search">Barre de recherche</label>
+          <input type="text" name="search" v-model="search">
+          <input type="submit" v-on:click="fetchData">
+    </form>
     <h1> Mon application </h1>
     <div>
       <h2>Articles</h2>
