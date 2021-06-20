@@ -56,8 +56,6 @@ export default {
       this.prev = this.prev + 1
       this.next = this.next + 1
     }
-
-
   },
   mounted () {
     this.fetchData()
