@@ -1,5 +1,5 @@
 <template>
-  <div class="grid grid-flow-row grid-cols-3 grid-rows-3 gap-4">
+  <div class="grid grid-flow-row grid-cols-3 grid-rows-2 gap-4">
     <div class="artist-card my-1 px-1 w-full lg:my-4 rounded-lg shadow-lg" v-for="artist in artists" :key="artist.content">
     <article>
         <img :srcset="artist.avatar">
