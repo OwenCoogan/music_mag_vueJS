@@ -8,7 +8,6 @@
 }
 
 #app{
-    padding: 0 10%;
     text-align:center;
     height:100%;
 }
@@ -66,4 +65,10 @@ p{
 .paginate-btn{
     height:80px;
     margin:auto;
+    border: solid 1px #93e4b5;
+    color: #ffffff;
+    background-color: #93e4b5;
+}
+.paginate-btn:hover{
+    opacity: 0.7;
 }

@@ -1,12 +1,12 @@
 <template>
     <header>
-        <nav class="flex items-center justify-between flex-wrap bg-teal p-6">
-          <h1> Music Mag </h1>
-          <router-link class="text-blue-500 hover:text-blue-800" to="/">Home</router-link>
-          <router-link  class="text-blue-500 hover:text-blue-800" to="/artists">Artists</router-link>
-          <router-link class="text-blue-500 hover:text-blue-800" to="/articles">News</router-link>
-          <router-link  class="text-blue-500 hover:text-blue-800" to="/register">S'inscrire</router-link>
-          <router-link class="text-blue-500 hover:text-blue-800" to="/login">Connexion</router-link>
+        <nav class="flex items-center justify-between flex-wrap bg-green-300 w-full p-6"> 
+          <h1 class="text-indigo-50"> Music Mag </h1>
+          <router-link to="/" class="text-indigo-50">Home</router-link>
+          <router-link to="/artists" class="text-indigo-50">Artists</router-link>
+          <router-link to="/articles" class="text-indigo-50">News</router-link>
+          <router-link  class="text-indigo-50" to="/register">S'inscrire</router-link>
+          <router-link class="text-indigo-50" to="/login">Connexion</router-link>
         </nav>
     </header>
 </template>
