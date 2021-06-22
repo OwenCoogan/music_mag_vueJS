@@ -1,5 +1,5 @@
 <template>
-  <div class="grid grid-flow-row grid-cols-3 grid-rows-3 gap-4">
+  <div class="grid grid-flow-row grid-cols-3 grid-rows-2 gap-4">
     <div class="article-card my-1 px-1 w-full lg:my-4 rounded-lg shadow-lg" v-for="article in articles" :key="article.content">
     <article class="">
         <div class="flex items-center justify-between leading-tight p-2 md:p-4">
@@ -56,8 +56,6 @@ export default {
       this.prev = this.prev + 1
       this.next = this.next + 1
     }
-
-
   },
   mounted () {
     this.fetchData()
